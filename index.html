@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="title">
+            <h1>Wordle</h1>
+        </div>
+        <hr size="1px" color="#373737">
+        <div id="table-container">
+            <div class="table">
+                <div class="table-row">
+                    <div class="table-cell" id="a1"></div>
+                    <div class="table-cell" id="a2"></div>
+                    <div class="table-cell" id="a3"></div>
+                    <div class="table-cell" id="a4"></div>
+                    <div class="table-cell" id="a5"></div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell" id="b1"></div>
+                    <div class="table-cell" id="b2"></div>
+                    <div class="table-cell" id="b3"></div>
+                    <div class="table-cell" id="b4"></div>
+                    <div class="table-cell" id="b5"></div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell" id="c1"></div>
+                    <div class="table-cell" id="c2"></div>
+                    <div class="table-cell" id="c3"></div>
+                    <div class="table-cell" id="c4"></div>
+                    <div class="table-cell" id="c5"></div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell" id="d1"></div>
+                    <div class="table-cell" id="d2"></div>
+                    <div class="table-cell" id="d3"></div>
+                    <div class="table-cell" id="d4"></div>
+                    <div class="table-cell" id="d5"></div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell" id="e1"></div>
+                    <div class="table-cell" id="e2"></div>
+                    <div class="table-cell" id="e3"></div>
+                    <div class="table-cell" id="e4"></div>
+                    <div class="table-cell" id="e5"></div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell" id="f1"></div>
+                    <div class="table-cell" id="f2"></div>
+                    <div class="table-cell" id="f3"></div>
+                    <div class="table-cell" id="f4"></div>
+                    <div class="table-cell" id="f5"></div>
+                </div>
+        </div>
+        </div>
+        <div class="keyboard-container">
+            <div class="keyboard">
+                <div class="row first-row">
+                    <button onclick="inputLetter('q')" id="q">Q</button>
+                    <button onclick="inputLetter('w')" id="w">W</button>
+                    <button onclick="inputLetter('e')" id="e">E</button>
+                    <button onclick="inputLetter('r')" id="r">R</button>
+                    <button onclick="inputLetter('t')" id="t">T</button>
+                    <button onclick="inputLetter('y')" id="y">Y</button>
+                    <button onclick="inputLetter('u')" id="u">U</button>
+                    <button onclick="inputLetter('i')" id="i">I</button>
+                    <button onclick="inputLetter('o')" id="o">O</button>
+                    <button onclick="inputLetter('p')" id="p">P</button>
+                </div>
+                <div class="row second-row">
+                    <button onclick="inputLetter('a')" id="a">A</button>
+                    <button onclick="inputLetter('s')" id="s">S</button>
+                    <button onclick="inputLetter('d')" id="d">D</button>
+                    <button onclick="inputLetter('f')" id="f">F</button>
+                    <button onclick="inputLetter('g')" id="g">G</button>
+                    <button onclick="inputLetter('h')" id="h">H</button>
+                    <button onclick="inputLetter('j')" id="j">J</button>
+                    <button onclick="inputLetter('k')" id="k">K</button>
+                    <button onclick="inputLetter('l')" id="l">L</button>
+                </div>
+                <div class="row third-row">
+                    <button onclick="inputEnter()" id="enter">ENTER</button>
+                    <button onclick="inputLetter('z')" id="z">Z</button>
+                    <button onclick="inputLetter('x')" id="x">X</button>
+                    <button onclick="inputLetter('c')" id="c">C</button>
+                    <button onclick="inputLetter('v')" id="v">V</button>
+                    <button onclick="inputLetter('b')" id="b">B</button>
+                    <button onclick="inputLetter('n')" id="n">N</button>
+                    <button onclick="inputLetter('m')" id="m">M</button>
+                    <button onclick="inputBackspace()" id="backspace"><i class="material-icons">backspace</i></button>
+                </div>
+            </div>
+        </div>
+        
+        <script src="index.js" async defer></script>
+    </body>
+</html>
